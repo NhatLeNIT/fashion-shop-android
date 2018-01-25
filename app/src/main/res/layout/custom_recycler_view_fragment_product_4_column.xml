@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearProduct"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bgRecycleView"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/imageViewProduct"
+            android:layout_width="105dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sanphammoi2" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:background="@color/colorWhite">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:text="giá thành"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="80dp"
+                android:layout_height="18dp"
+                android:text="150.000đ"
+                android:textAlignment="center"
+                android:textColor="#ebff4102"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/textViewPricePromotion"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

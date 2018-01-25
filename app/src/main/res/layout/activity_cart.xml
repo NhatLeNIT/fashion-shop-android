@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarCart"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/bgToolbar"
+            app:theme="@style/MenuItemColorWhite"
+             />
+    </android.support.design.widget.AppBarLayout>
+
+    <!--khi giỏ hàng không có sản phẩm thì hiện lên linearLayout này-->
+    <LinearLayout
+        android:id="@+id/linearCartEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorGray"
+        android:orientation="vertical"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="30dp"
+                android:src="@drawable/ic_add_shopping_cart_white_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingBottom="20dp"
+                android:text="Giỏ hàng của bạn đang trống"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--end-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="70dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <!--khi giỏ hàng có sản phẩm Li(1)-->
+    <LinearLayout
+        android:id="@+id/linearCartSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGray"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Tổng ước tính:"
+                android:textColor="@color/colorBlack180" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="290.000 VND:"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorBlack180" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bao gồm VAT"
+                    android:textAlignment="textEnd" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <!--end-->
+
+    <!--khi giỏ hàng không có sản phẩm thay cái này cho Li(1) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorGray"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+        <Button
+            android:id="@+id/buttonOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorLogo"
+            android:text="Đặt hàng"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorLogo"
+            android:text="Tiếp tục mua hàng"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>
+    <!--end-->
+
+</android.support.design.widget.CoordinatorLayout>

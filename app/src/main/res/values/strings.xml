@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NShop</string>
+    <string name="search">Tìm Kiếm</string>
+    <string name="search_title">Tìm kiếm</string>
+    <string name="cart_title">Giỏ hàng</string>
+    <string name="more_title">Xem thêm</string>
+    <string name="login_title">Đăng nhập</string>
+    <string name="notification_title">Thông báo</string>
+    <string name="favorite_title">Yêu thích</string>
+    <string name="order_title">Đơn hàng của tôi</string>
+    <string name="setting_title">Cài đặt</string>
+    <string name="help_title">Trợ giúp</string>
+    <string name="policy_title">Chính sách</string>
+
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="logout_title">Đăng xuất</string>
+</resources>

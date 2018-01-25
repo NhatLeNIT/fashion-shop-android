@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorGray">#ccc</color>
+    <color name="colorGrayTransparent">#EBEBEB</color>
+    <color name="colorLogo">#f67122</color>
+    <color name="bgToolbar">#183545</color>
+    <color name="bgLogo">#f67122</color>
+    <color name="colorFacebook">#4a6ea9</color>
+    <color name="colorGoogle">#da4835</color>
+    <color name="colorError">#e5f72905</color>
+    <color name="colorBlack">#333</color>
+    <color name="bgRecycleView">#f5f5f5</color>
+    <color name="colorGreen">#13e904</color>
+    <color name="colorBlack180">#cc000000</color>
+    <color name="colorBlack170">#b7ffffff</color>
+    <color name="colorSliderInActive">#9fb4bf</color>
+</resources>
